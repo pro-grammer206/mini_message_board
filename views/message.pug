@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block content
+    h2 #{title}
+    div.card
+        p #{post.user}
+        p #{post.text}
+        p #{post.added}
+
+    a(href='/') Go Home

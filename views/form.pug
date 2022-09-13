@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block content
+    form(action="/new" method="POST" class='form')
+        label(for="user") User
+        input(type="text" name="user" id="user" placeholder="enter user" required=true)
+        label(for="content") Content
+        textarea(col="4" placeholder="enter content" id='content' name='content' required=true)  
+        button Add Message
+    a(href='/') Home
